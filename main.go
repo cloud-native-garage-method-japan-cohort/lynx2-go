@@ -20,9 +20,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, string(responseJSON))
 }
+func handlerHello(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello")
+}
 
 func main() {
 
-	http.HandleFunc("/", handler)
+	http.HandleFunc("/", handlerHello)
+	http.HandleFunc("/go/", handler)
 	http.ListenAndServe(":8080", nil)
 }
