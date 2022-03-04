@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: lynx2-go
+    app.kubernetes.io/instance: lynx2-go
+    app.kubernetes.io/name: lynx2-go
+  name: lynx2-go
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: lynx2-go
+    app.kubernetes.io/name: lynx2-go
+  sessionAffinity: None
+  type: ClusterIP
