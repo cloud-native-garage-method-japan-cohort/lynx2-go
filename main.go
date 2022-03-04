@@ -21,7 +21,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, string(responseJSON))
 }
 func handlerHello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello")
+	fmt.Fprintf(w, "Hello!")
 }
 
 func main() {
