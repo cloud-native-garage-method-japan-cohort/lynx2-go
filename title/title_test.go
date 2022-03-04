@@ -12,7 +12,7 @@ func Test_title_Get(t *testing.T) {
 		{
 			name: "正常系",
 			tr:   &title{},
-			want: "Lynx Search 2",
+			want: "やまねこ座 検索 2",
 		},
 	}
 	for _, tt := range tests {

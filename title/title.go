@@ -14,5 +14,5 @@ func NewTitle() Title {
 }
 
 func (t *title) Get() string {
-	return "Lynx Search 2"
+	return "やまねこ座 検索 2"
 }
